@@ -15,9 +15,9 @@
       "macaddress": "*"
     }
   ],
-  "documentation": "https://github.com/micahqcade/custom_vesync",
+  "documentation": "https://github.com/gdgib/custom_vesync",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/micahqcade/custom_vesync",
+  "issue_tracker": "https://github.com/gdgib/custom_vesync",
   "loggers": [
     "pyvesync"
   ],

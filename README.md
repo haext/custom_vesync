@@ -4,7 +4,7 @@
 > This a fork of the existing archived project created by vlebourl. Please contribute here.
 
 <!---[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/custom-components/hacs)-->
-[![GitHub release](https://img.shields.io/github/v/release/micahqcade/custom_vesync.svg)](https://GitHub.com/micahqcade/custom_vesync/releases/)
+[![GitHub release](https://img.shields.io/github/v/release/gdgib/custom_vesync.svg)](https://GitHub.com/gdgib/custom_vesync/releases/)
 
 # VeSync custom component for Home Assistant
 
