@@ -1,0 +1,10 @@
+name: Meta Request
+description: Meta request
+title: "[Meta]: "
+labels: [meta]
+body:
+  - type: textarea
+    id: meta-request
+    attributes:
+      label: Request 
+      description: Add your request here (i.e. something about the repo itself)
