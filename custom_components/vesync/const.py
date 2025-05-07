@@ -28,6 +28,7 @@ VS_MODE_HUMIDITY = "humidity"
 VS_MODE_MANUAL = "manual"
 VS_MODE_SLEEP = "sleep"
 VS_MODE_TURBO = "turbo"
+VS_MODE_PET = "pet"
 
 VS_TO_HA_ATTRIBUTES = {"humidity": "current_humidity"}
 
