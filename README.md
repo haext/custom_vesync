@@ -1,11 +1,12 @@
 
 # **Important message**
 > 
-> This a fork of the existing archived project created by vlebourl. Please contribute here.
+> This is a fork of the existing project most recently managed by by micahqcade, however it hasn't had activity in ~2 years. I'm personally using this one, feel free to contribute here.
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/custom-components/hacs)
-[![GitHub release](https://img.shields.io/github/v/release/vlebourl/custom_vesync.svg)](https://GitHub.com/vlebourl/custom_vesync/releases/)
+[![GitHub release](https://img.shields.io/github/v/release/jdaleo23/custom_vesync.svg)](https://GitHub.com/jdaleo23/custom_vesync/releases/)
 
+# Legacy Information...
 # VeSync custom component for Home Assistant
 
 Custom component for Home Assistant to interact with smart devices via the VeSync platform.
@@ -44,22 +45,3 @@ logger:
     custom_components.vesync: debug
     pyvesync: debug
 ```
-
-## TODO LIST
-```
-- [x] Air Fryer Properties (AirFryer158)
-- [ ] Air Fryer Methods
-- [ ] Create the Card
-```
-
-### Contributing
-
-All contributions are very welcomed!
-Please make sure to install `pre-commit` and run the pre-commit hook before submitting a PR.
-
-```sh
-pip install pre-commit
-pre-commit install
-pre-commit run --all-files
-```
-
