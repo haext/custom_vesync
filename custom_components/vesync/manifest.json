@@ -1,7 +1,10 @@
 {
   "domain": "vesync",
   "name": "VeSync",
+  "version": "1.4.0"
+  "integration_type": "hub",
   "codeowners": [
+    "@jdaleo23",
     "@markperdue",
     "@webdjoe",
     "@thegardenmonkey",
@@ -15,11 +18,10 @@
       "macaddress": "*"
     }
   ],
-  "documentation": "https://github.com/micahqcade/custom_vesync",
+  "documentation": "https://github.com/jdaleo23/custom_vesync",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/micahqcade/custom_vesync",
+  "issue_tracker": "https://github.com/jdaleo23/custom_vesync",
   "requirements": [
     "pyvesync==2.1.12"
   ],
-  "version": "1.3.2"
 }
