@@ -85,13 +85,19 @@ class VeSyncFanHA(VeSyncDevice, FanEntity):
             self._speed_range = (1, 3)
 
     @property
-    def supported_features(self):
+    def supported_features(self) -> FanEntityFeature:
         """Flag supported features."""
-        return (
-            FanEntityFeature.SET_SPEED | FanEntityFeature.PRESET_MODE
-            if self.speed_count > 1
-            else FanEntityFeature.SET_SPEED
-        )
+        # Start with power features which are now required for the turn_on/off actions to work
+        features = FanEntityFeature.TURN_ON | FanEntityFeature.TURN_OFF
+        
+        # Add speed features if applicable
+        features |= FanEntityFeature.SET_SPEED
+        
+        # Add preset features if more than one speed exists
+        if self.speed_count > 1:
+            features |= FanEntityFeature.PRESET_MODE
+            
+        return features
 
     @property
     def percentage(self):
@@ -150,7 +156,7 @@ class VeSyncFanHA(VeSyncDevice, FanEntity):
         """Set the preset mode of device."""
         if preset_mode not in self.preset_modes:
             raise ValueError(
-                "{preset_mode} is not one of the valid preset modes: {self.preset_modes}"
+                f"{preset_mode} is not one of the valid preset modes: {self.preset_modes}"
             )
 
         if not self.smartfan.is_on:
@@ -169,7 +175,6 @@ class VeSyncFanHA(VeSyncDevice, FanEntity):
 
     def turn_on(
         self,
-        # speed: str | None = None,
         percentage: int | None = None,
         preset_mode: str | None = None,
         **kwargs,
@@ -181,3 +186,8 @@ class VeSyncFanHA(VeSyncDevice, FanEntity):
         if percentage is None:
             percentage = 50
         self.set_percentage(percentage)
+
+    def turn_off(self, **kwargs) -> None:
+        """Turn the device off."""
+        self.smartfan.turn_off()
+        self.schedule_update_ha_state()
