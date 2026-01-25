@@ -23,5 +23,5 @@
   "issue_tracker": "https://github.com/jdaleo23/custom_vesync",
   "requirements": [
     "pyvesync==2.1.12"
-  ],
+  ]
 }
