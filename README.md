@@ -1,7 +1,7 @@
 
 # **Important message**
 > 
-> This is a fork of the existing project most recently managed by by micahqcade, however it hasn't had activity in ~2 years. I'm personally using this one, feel free to contribute here.
+> This is a fork of the existing project most recently managed by micahqcade, however it doesn't appear to have had activity in ~2 years. I'm personally using this one, feel free to contribute here.
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/custom-components/hacs)
 [![GitHub release](https://img.shields.io/github/v/release/jdaleo23/custom_vesync.svg)](https://GitHub.com/jdaleo23/custom_vesync/releases/)
