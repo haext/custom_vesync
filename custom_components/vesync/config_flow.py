@@ -6,10 +6,10 @@ from pyvesync.vesync import VeSync
 import voluptuous as vol
 
 from homeassistant import config_entries
-from homeassistant.components import dhcp
 from homeassistant.const import CONF_PASSWORD, CONF_USERNAME
 from homeassistant.core import callback
 from homeassistant.data_entry_flow import FlowResult
+from homeassistant.helpers.service_info.dhcp import DhcpServiceInfo
 
 from .const import DOMAIN
 
@@ -66,7 +66,7 @@ class VeSyncFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
             else self._show_form(errors={"base": "invalid_auth"})
         )
 
-    async def async_step_dhcp(self, discovery_info: dhcp.DhcpServiceInfo) -> FlowResult:
+    async def async_step_dhcp(self, discovery_info: DhcpServiceInfo) -> FlowResult:
         """Handle DHCP discovery."""
         hostname = discovery_info.hostname
 
