@@ -141,7 +141,7 @@ class VeSyncFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
             errors=errors,
         )
 
-    async def async_step_dhcp(self, discovery_info: dhcp.DhcpServiceInfo) -> FlowResult:
+    async def async_step_dhcp(self, discovery_info: DhcpServiceInfo) -> FlowResult:
         """Handle DHCP discovery."""
         hostname = discovery_info.hostname
 
