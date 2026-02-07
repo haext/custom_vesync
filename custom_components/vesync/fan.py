@@ -21,9 +21,9 @@ from .const import (
     VS_LEVELS,
     VS_MODE_AUTO,
     VS_MODE_MANUAL,
+    VS_MODE_PET,
     VS_MODE_SLEEP,
     VS_MODE_TURBO,
-    VS_MODE_PET,
     VS_MODES,
     VS_TO_HA_ATTRIBUTES,
 )
