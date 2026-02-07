@@ -4,8 +4,8 @@
 > This a fork of the archived project created by [vlebourl](https://github.com/vlebourl/custom_vesync), and previously maintained by [micahqcade](https://github.com/micahqcade/). Please contribute here.
 
 <!---[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/custom-components/hacs)-->
-[![GitHub release](https://img.shields.io/github/v/release/haext/custom_vesync.svg)](https://GitHub.com/haext/custom_vesync/releases/)
 
+# Legacy Information...
 # VeSync custom component for Home Assistant
 
 Custom component for Home Assistant to interact with smart devices via the VeSync platform.
